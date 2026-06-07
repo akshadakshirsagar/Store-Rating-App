@@ -1,117 +1,16 @@
-# Store-Rating-App
-# Store Rating Application
+# React + Vite
 
-## Overview
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-A full-stack web application that allows users to rate stores. The system supports Admin, User, and Store Owner roles.
+Currently, two official plugins are available:
 
-## Technologies Used
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-### Frontend
+## React Compiler
 
-* React.js
-* Vite
-* Tailwind CSS
-* Axios
-* React Router DOM
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### Backend
+## Expanding the ESLint configuration
 
-* Node.js
-* Express.js
-* JWT Authentication
-* bcryptjs
-
-### Database
-
-* MySQL
-
-## Features
-
-### Authentication
-
-* User Registration
-* User Login
-* JWT Authentication
-
-### Admin Features
-
-* Add Store
-* View Stores
-* View Users
-* Dashboard Statistics
-
-### User Features
-
-* View Stores
-* View Average Ratings
-* Submit Ratings
-* Update Ratings
-
-### Store Owner Features
-
-* View Store Details
-* View Average Rating
-* View User Ratings
-
-## Project Structure
-
-store-rating-app/
-
-* backend/
-
-  * routes/
-  * middleware/
-  * db.js
-  * server.js
-
-* frontend/
-
-  * src/
-
-    * pages/
-    * App.jsx
-
-## Installation
-
-### Backend
-
-```bash
-cd backend
-npm install
-npx nodemon server.js
-```
-
-Backend runs on:
-
-http://localhost:5000
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend runs on:
-
-http://localhost:5173
-
-## Database
-
-Create MySQL database:
-
-```sql
-CREATE DATABASE store_rating_app;
-```
-
-Import the required tables:
-
-* users
-* stores
-* ratings
-
-## Author
-
-Akshada Kshirsagar
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
